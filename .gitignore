@@ -1,0 +1,43 @@
+*.mongodb
+.DS_store
+.env
+.idea
+.npmrc
+.nvmrc
+.serverless
+.sublime-project
+.sublimelinterrc
+.vscode
+
+# yarn
+.yarnrc.yml
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+!.yarn/plugins
+
+# only with yarn zero-installs
+#!.yarn/cache
+
+# only with yarn node-modules
+.pnp.*
+
+applications/*/lib
+applications/ds-e2e-tests/cypress/downloads
+applications/ds-e2e-tests/cypress/screenshots
+applications/ds-e2e-tests/cypress/videos
+
+build
+coverage
+dist
+lerna-debug.log
+libraries/*/lib
+node_modules
+nx-cache
+package.json.lerna_backup
+private
+
+applications/*/package-lock.json
+libraries/*/package-lock.json
