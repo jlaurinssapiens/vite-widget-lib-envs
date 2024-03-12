@@ -42,6 +42,7 @@ const RemoteAppWrapper = props => {
   useEffect(() => {
     store.injectReducer(remoteAppScope, reducer);
   }, []);
+  console.log(process.env.TEST_KEY)
 
   return (
     <Provider store={store || {}}>
@@ -50,4 +51,4 @@ const RemoteAppWrapper = props => {
   );
 };
 
-export default RemoteAppWrapper
+export { RemoteAppWrapper }
